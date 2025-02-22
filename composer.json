@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "description": "Brain games",
+    "authors": [
+        {
+            "name": "stav86",
+            "email": "averin.stepan16@yandex.ru"
+        }
+    ],
+    "license": "proprietary",
+    "require": {},
+    "bin": [
+	"bin/brain-games"
+    ]
+}
