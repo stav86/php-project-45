@@ -22,7 +22,7 @@ function generateQuestion(): array
     $randome_key = array_rand($array_num, 1);
     $rightAnswer = $array_num[$randome_key];
     $array_num[$randome_key] = '..';
-    $question = implode(", ", $array_num);
+    $question = implode(" ", $array_num);
     return [$question, $rightAnswer];
 }
 
