@@ -10,7 +10,7 @@
     "license": "proprietary",
     "autoload": {
 	"files": [
-            "src/Engine.php"
+            "src/Cli.php"
 	    ]
     },
     "require": {
