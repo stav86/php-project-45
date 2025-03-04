@@ -1,10 +1,11 @@
 <?php
 
+use function cli\prompt;
+
 function greeting()
 {
     echo "Welcome to the Brain Games!\n";
-    echo "May I have your name? ";
-    $name = trim(fgets(STDIN));
+    $name = prompt('May I have your name?');
     echo "Hello, $name!\n";
     echo "Answer \"yes\" if given number is prime. Otherwise answer \"no\".\n";
     return $name;

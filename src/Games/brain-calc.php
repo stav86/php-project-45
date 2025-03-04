@@ -1,13 +1,11 @@
 <?php
 
+use function cli\prompt;
+
 function greeting()
 {
     echo "Welcome to the Brain Games!\n";
-    echo "May I have your name? ";
-    $input = fgets(STDIN);
-    if ($input !== false) {
-        $name = trim($input);
-    }
+    $name = prompt('May I have your name?');
     echo "Hello, $name!\n";
     echo "What is the result of the expression?\n";
     return $name;

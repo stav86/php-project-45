@@ -1,10 +1,11 @@
 <?php
 
+use function cli\prompt;
+
 function greeting()
 {
     echo "Welcome to the Brain Games!\n";
-    echo "May I have your name? ";
-    $name = trim(fgets(STDIN));
+    $name = prompt('May I have your name?');
     echo "Hello, $name!\n";
     echo "Find the greatest common divisor of given numbers.\n";
     return $name;
