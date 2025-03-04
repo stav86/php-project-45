@@ -2,9 +2,10 @@
 
 function description()
 {
-    echo "\"yes\" if the number even, otherwise answer \"no\"\n";
+    echo "Answer \"yes\" if the number even, otherwise answer \"no\"\n";
 }
 
+description();
 
 function generateQuestion(): array
 {
@@ -16,5 +17,4 @@ function generateQuestion(): array
 
 require_once(__DIR__ . '/../Engine.php');
 
-description();
 play($name);
