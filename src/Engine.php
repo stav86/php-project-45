@@ -1,5 +1,7 @@
 <?php
 
+use function cli\prompt;
+
 function isCorrect(string $answer, string $rightAnswer): bool
 {
     return $answer == $rightAnswer;
@@ -13,10 +15,7 @@ function play(string $name)
 
         echo "Question: {$question}\n";
         echo "Your answer: ";
-        $input = fgets(STDIN);
-        if ($input !== false) {
-            $answer = trim($input);
-        }
+        $answer = prompt('Your answer?:');
 
         if (isCorrect($answer, $rightAnswer)) {
             echo "Correct!\n";
