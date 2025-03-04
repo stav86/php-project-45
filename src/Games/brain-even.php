@@ -1,11 +1,15 @@
 <?php
 
-function description()
+function greeting()
 {
+    echo "Welcome to the Brain Games!\n";
+    echo "May I have your name? ";
+    $name = trim(fgets(STDIN));
+    echo "Hello, $name!\n";
     echo "Answer \"yes\" if the number is even, otherwise answer \"no\".\n";
+    return $name;
 }
 
-description();
 
 function generateQuestion(): array
 {
@@ -17,4 +21,5 @@ function generateQuestion(): array
 
 require_once(__DIR__ . '/../Engine.php');
 
+$name = greeting();
 play($name);

@@ -26,5 +26,7 @@ function generateQuestion(): array
         return [$question, $max_num];
 }
 
+require_once(__DIR__ . '/../Engine.php');
+
 $name = greeting();
 play($name);
