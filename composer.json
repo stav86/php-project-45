@@ -26,6 +26,5 @@
     ],
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.11"
-    },
-    "version": "2.7.1"
+    }
 }
