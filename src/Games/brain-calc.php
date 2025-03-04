@@ -4,7 +4,10 @@ function greeting()
 {
     echo "Welcome to the Brain Games!\n";
     echo "May I have your name? ";
-    $name = trim(fgets(STDIN));
+    $input = fgets(STDIN);
+    if ($input !== false) {
+        $name = trim($input);
+    }
     echo "Hello, $name!\n";
     echo "What is the result of the expression?\n";
     return $name;

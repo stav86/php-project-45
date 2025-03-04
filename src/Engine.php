@@ -1,10 +1,10 @@
 <?php
 
-function isCorrect($answer, $rightAnswer): bool
+function isCorrect(string $answer, string $rightAnswer): bool
 {
     return $answer == $rightAnswer;
 }
-function play($name)
+function play(string $name)
 {
     $correctAnswer = 0;
 
@@ -13,7 +13,10 @@ function play($name)
 
         echo "Question: {$question}\n";
         echo "Your answer: ";
-        $answer = trim(fgets(STDIN));
+        $input = fgets(STDIN);
+        if ($input !== false) {
+            $answer = trim($input);
+        }
 
         if (isCorrect($answer, $rightAnswer)) {
             echo "Correct!\n";
