@@ -2,7 +2,7 @@
 
 function description()
 {
-    echo "Answer \"yes\" if the number even, otherwise answer \"no\"\n";
+    echo "Answer \"yes\" if the number is even, otherwise answer \"no\".\n";
 }
 
 description();
