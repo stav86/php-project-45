@@ -1,6 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/stav86/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/stav86/php-project-45/actions)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/maintainability)](https://codeclimate.com/github/stav86/php-project-45/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/test_coverage)](https://codeclimate.com/github/stav86/php-project-45/test_coverage)
 
 https://asciinema.org/a/FsdU0XCULfcxEbQYEY1hX9l65 #установка зависимостей, тест игры "Проверка на четность"
 
