@@ -15,8 +15,6 @@ function generateQuestion(): array
 }
 
 require_once(__DIR__ . '/../Engine.php');
-require_once(__DIR__ . '/../Cli.php');
 
-global $name;
 description();
 play($name);
