@@ -20,7 +20,7 @@ function generateQuestion(): array
         $rightAnswer = 'no';
     } elseif ($number === 2) {
         $rightAnswer = 'yes';
-    } elseif ($number > 2 && $number % 2 == 0) {
+    } elseif ($number % 2 == 0) {
         $rightAnswer = 'no';
     } else {
         for ($i = 3; $i <= sqrt($number); $i += 2) {
