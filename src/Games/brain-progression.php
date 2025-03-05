@@ -14,17 +14,17 @@ function greeting()
 
 function generateQuestion(): array
 {
-    $first_num = rand(1, 30);
+    $firstNum = rand(1, 30);
     $progress = rand(2, 6);
-    $array_num = [];
+    $arrayNum = [];
     for ($i = 0; $i < 10; $i++) {
-        $progress_num = $first_num + $i * $progress;
-        $array_num[] = $progress_num;
+        $progressNum = $firstNum + $i * $progress;
+        $arrayNum[] = $progressNum;
     }
-    $randome_key = array_rand($array_num, 1);
-    $rightAnswer = $array_num[$randome_key];
-    $array_num[$randome_key] = '..';
-    $question = implode(" ", $array_num);
+    $randomeKey = array_rand($arrayNum, 1);
+    $rightAnswer = $array_num[$randomeKey];
+    $arrayNum[$randomeKey] = '..';
+    $question = implode(" ", $arrayNum);
     return [$question, $rightAnswer];
 }
 
