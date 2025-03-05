@@ -12,7 +12,7 @@ function generateQuestion(): array
     $arrayNum = [$number1, $number2];
     $maxNum = max($number1, $number2);
     $minNum = min($number1, $number2);
-    while ($min_num != 0) {
+    while ($minNum != 0) {
             $result = $maxNum % $minNum;
             $maxNum = $minNum;
             $minNum = $result;
