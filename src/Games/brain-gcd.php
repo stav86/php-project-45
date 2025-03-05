@@ -14,18 +14,18 @@ function greeting()
 
 function generateQuestion(): array
 {
-    $number_1 = rand(1, 100);
-        $number_2 = rand(1, 100);
-        $question = "{$number_1} {$number_2}";
-        $array_num = [$number_1, $number_2];
-        $max_num = max($number_1, $number_2);
-        $min_num = min($number_1, $number_2);
+        $number1 = rand(1, 100);
+        $number2 = rand(1, 100);
+        $question = "{$number1} {$number2}";
+        $arrayNum = [$number1, $number2];
+        $maxNum = max($number1, $number2);
+        $minNum = min($number1, $number2);
     while ($min_num != 0) {
-            $result = $max_num % $min_num;
-            $max_num = $min_num;
-            $min_num = $result;
+            $result = $maxNum % $minNum;
+            $maxNum = $minNum;
+            $minNum = $result;
     }
-        return [$question, $max_num];
+        return [$question, $maxNum];
 }
 
 $name = greeting();

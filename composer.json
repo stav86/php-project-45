@@ -11,7 +11,8 @@
     "minimum-stability": "stable",
     "autoload": {
 	"files": [
-        "src/Engine.php"
+        "src/Engine.php",
+        "src/Cli.php"
     ]
     },
     "require": {

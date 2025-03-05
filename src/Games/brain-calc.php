@@ -14,21 +14,21 @@ function greeting()
 
 function generateQuestion(): array
 {
-    $number_1 = rand(1, 10);
-    $number_2 = rand(1, 10);
+    $number1 = rand(1, 10);
+    $number2 = rand(1, 10);
     $operators = ['+', '-', '*'];
     $randomeKeySign = array_rand($operators, 1);
     $sign = $operators[$randomeKeySign];
-    $question = "{$number_1} $sign {$number_2}";
+    $question = "{$number1} $sign {$number2}";
     switch ($sign) {
         case '+':
-            $rightAnswer = $number_1 + $number_2;
+            $rightAnswer = $number1 + $number2;
             break;
         case '-':
-            $rightAnswer = $number_1 - $number_2;
+            $rightAnswer = $number1 - $number2;
             break;
         case '*':
-            $rightAnswer = $number_1 * $number_2;
+            $rightAnswer = $number1 * $number2;
             break;
     }
         return [$question, $rightAnswer];
