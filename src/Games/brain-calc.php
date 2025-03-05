@@ -1,13 +1,14 @@
 <?php
 
 use function cli\prompt;
+use function cli\line;
 
 function greeting()
 {
-    echo "Welcome to the Brain Games!\n";
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
-    echo "Hello, $name!\n";
-    echo "What is the result of the expression?\n";
+    line("Hello, %s!", $name);
+    line("What is the result of the expression?");
     return $name;
 }
 
@@ -15,9 +16,9 @@ function generateQuestion(): array
 {
     $number_1 = rand(1, 10);
     $number_2 = rand(1, 10);
-    $sign_array = ['+', '-', '*'];
-    $randome_key_sign = array_rand($sign_array, 1);
-    $sign = $sign_array[$randome_key_sign];
+    $operators = ['+', '-', '*'];
+    $randomeKeySign = array_rand($operators, 1);
+    $sign = $operators[$randomeKeySign];
     $question = "{$number_1} $sign {$number_2}";
     switch ($sign) {
         case '+':
@@ -32,8 +33,6 @@ function generateQuestion(): array
     }
         return [$question, $rightAnswer];
 }
-
-require_once(__DIR__ . '/../Engine.php');
 
 $name = greeting();
 play($name);

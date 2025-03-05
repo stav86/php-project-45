@@ -1,32 +1,34 @@
 <?php
 
 use function cli\prompt;
+use function cli\line;
 
 function isCorrect(string $answer, string $rightAnswer): bool
 {
     return $answer == $rightAnswer;
 }
+
 function play(string $name)
 {
-    $correctAnswer = 0;
+    $answerCount = 0;
+    $rightAnswerCount = 3;
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < $rightAnswerCount; $i++) {
         list($question, $rightAnswer) = generateQuestion();
 
-        echo "Question: {$question}\n";
-        echo "Your answer: ";
+        line("Question: {$question}");
         $answer = prompt('Your answer?:');
 
         if (isCorrect($answer, $rightAnswer)) {
-            echo "Correct!\n";
-            $correctAnswer++;
+            line("Correct!");
+            $answerCount++;
         } else {
-            echo "'$answer' is wrong answer ;(. Correct answer was '$rightAnswer'.\n";
-            echo "Let's try again, $name!\n";
-            break;
+            line("'$answer' is wrong answer ;(. Correct answer was '$rightAnswer'.");
+            line("Let's try again, $name!");
+            return;
         }
     }
-    if ($correctAnswer === 3) {
-        echo "Congratulations, $name!\n";
+    if ($answerCount === $rightAnswerCount) {
+        line("Congratulations, $name!");
     }
 }

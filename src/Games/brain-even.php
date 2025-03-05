@@ -1,13 +1,14 @@
 <?php
 
 use function cli\prompt;
+use function cli\line;
 
 function greeting()
 {
-    echo "Welcome to the Brain Games!\n";
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
-    echo "Hello, $name!\n";
-    echo "Answer \"yes\" if the number is even, otherwise answer \"no\".\n";
+    line("Hello, %s!", $name);
+    line ('Answer "yes" if the number is even, otherwise answer "no".');
     return $name;
 }
 
@@ -19,8 +20,6 @@ function generateQuestion(): array
     $rightAnswer = ($number % 2 === 0) ? 'yes' : 'no';
     return [$question, $rightAnswer];
 }
-
-require_once(__DIR__ . '/../Engine.php');
 
 $name = greeting();
 play($name);

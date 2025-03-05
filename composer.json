@@ -10,7 +10,9 @@
     "license": "proprietary",
     "minimum-stability": "stable",
     "autoload": {
-	"files": []
+	"files": [
+        "src/Engine.php"
+    ]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"

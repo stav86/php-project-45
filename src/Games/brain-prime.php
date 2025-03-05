@@ -1,13 +1,14 @@
 <?php
 
 use function cli\prompt;
+use function cli\line;
 
 function greeting()
 {
-    echo "Welcome to the Brain Games!\n";
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
-    echo "Hello, $name!\n";
-    echo "Answer \"yes\" if given number is prime. Otherwise answer \"no\".\n";
+    line("Hello, %s!", $name);
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     return $name;
 }
 
@@ -32,8 +33,6 @@ function generateQuestion(): array
     }
     return [$question, $rightAnswer];
 }
-
-require_once(__DIR__ . '/../Engine.php');
 
 $name = greeting();
 play($name);

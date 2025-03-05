@@ -1,13 +1,14 @@
 <?php
 
 use function cli\prompt;
+use function cli\line;
 
 function greeting()
 {
-    echo "Welcome to the Brain Games!\n";
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
-    echo "Hello, $name!\n";
-    echo "What number is missing in the progression?\n";
+    line("Hello, %s!", $name);
+    line("What number is missing in the progression?");
     return $name;
 }
 
@@ -26,8 +27,6 @@ function generateQuestion(): array
     $question = implode(" ", $array_num);
     return [$question, $rightAnswer];
 }
-
-require_once(__DIR__ . '/../Engine.php');
 
 $name = greeting();
 play($name);
