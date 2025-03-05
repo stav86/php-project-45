@@ -8,7 +8,7 @@ function isCorrect(string $answer, string $rightAnswer): bool
     return $answer == $rightAnswer;
 }
 
-function play(string $name)
+function play($name)
 {
     $answerCount = 0;
     $rightAnswerCount = 3;
