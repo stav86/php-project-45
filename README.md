@@ -1,4 +1,4 @@
-## Project "Brain Game" !(https://icons8.ru/icon/114906/brain)
+## Project "Brain Game" ![https://icons8.ru/icon/114906/brain]
 [![Actions Status](https://github.com/stav86/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/stav86/php-project-45/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/maintainability)](https://codeclimate.com/github/stav86/php-project-45/maintainability)
 
 ### Description
