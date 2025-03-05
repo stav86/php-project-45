@@ -12,5 +12,4 @@ function generateQuestion(): array
     return [$question, $rightAnswer];
 }
 
-
 play($name);

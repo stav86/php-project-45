@@ -3,17 +3,9 @@
 use function cli\prompt;
 use function cli\line;
 
-function greeting()
-{
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line("What is the result of the expression?");
-    return $name;
-}
-
 function generateQuestion(): array
 {
+    line("What is the result of the expression?");
     $number1 = rand(1, 10);
     $number2 = rand(1, 10);
     $operators = ['+', '-', '*'];
@@ -34,5 +26,4 @@ function generateQuestion(): array
         return [$question, $rightAnswer];
 }
 
-$name = greeting();
 play($name);

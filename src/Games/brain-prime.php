@@ -3,17 +3,9 @@
 use function cli\prompt;
 use function cli\line;
 
-function greeting()
-{
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line('Answer "yes" if given number is prime. Otherwise answer "no".');
-    return $name;
-}
-
 function generateQuestion(): array
 {
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     $number = rand(1, 100);
     $question = $number;
     $rightAnswer = 'yes';
@@ -34,5 +26,4 @@ function generateQuestion(): array
     return [$question, $rightAnswer];
 }
 
-$name = greeting();
 play($name);
