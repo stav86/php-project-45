@@ -27,19 +27,3 @@ brain-progression: #запуск игры "Арифмитическая прог
 
 brain-prime: #запуск игры "Простое ли число?"
 	php bin/brain-prime
-
-test:
-	composer exec --verbose phpunit tests
-
-test-coverage:
-	XDEBUG_MODE=coverage composer exec --verbose phpunit tests -- --coverage-clover build/logs/clover.xml
-
-test-coverage-text:
-	XDEBUG_MODE=coverage composer exec --verbose phpunit tests -- --coverage-text
-
-lint-fix:
-	composer exec --verbose phpcbf -- --standard=PSR12 src tests
-
-
-console:
-	composer exec --verbose psysh
