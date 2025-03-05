@@ -1,16 +1,24 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/stav86/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/stav86/php-project-45/actions)
+## Project "Brain Game"
+[![Actions Status](https://github.com/stav86/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/stav86/php-project-45/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/maintainability)](https://codeclimate.com/github/stav86/php-project-45/maintainability)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/maintainability)](https://codeclimate.com/github/stav86/php-project-45/maintainability)
+### Description
+"Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. 
+**Games:**
+* Check for parity
+* Calculator
+* Game GCD
+* Arithmetic progression
+* Is it a prime number?
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/6aa027464e1646d450cb/test_coverage)](https://codeclimate.com/github/stav86/php-project-45/test_coverage)
 
-https://asciinema.org/a/FsdU0XCULfcxEbQYEY1hX9l65 #установка зависимостей, тест игры "Проверка на четность"
 
-https://asciinema.org/a/akxJ0xY2pJjEYq9wQc5SWFf3z #тест игры "Калькулятор"
+### Asciinema running games
+* **#1** - [Installing dependencies. Test of the game "Check for parity"](https://asciinema.org/a/FsdU0XCULfcxEbQYEY1hX9l65)
 
-https://asciinema.org/a/JCXx8bAcggNwzOWvmzKgZQRhz #тест игры "Игра НОД"
+* **#2** - [Test of the game "Calculator"](https://asciinema.org/a/akxJ0xY2pJjEYq9wQc5SWFf3z)
 
-https://asciinema.org/a/QSYcgeAMMkBAZGhqv3g4t64Cp #тест игры "Арифмитическая прогрессия"
+* **#3** - [Test of the game "Game GCD"](https://asciinema.org/a/JCXx8bAcggNwzOWvmzKgZQRhz)
 
-https://asciinema.org/a/2jF9VPxeIkKLNkFUsMH4Jmlvf #тест игры "Простое ли число?
+* **#4** - [Test of the game "Arithmetic progression"](https://asciinema.org/a/QSYcgeAMMkBAZGhqv3g4t64Cp)
+
+* **#5** - [Test of the game "Is it a prime number?"](https://asciinema.org/a/2jF9VPxeIkKLNkFUsMH4Jmlvf)
