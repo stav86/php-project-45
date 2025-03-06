@@ -8,7 +8,7 @@ function description()
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
 }
 
-function generateQuestion($userName): array
+function generateQuestion(string $userName): array
 {
     $number = rand(1, 100);
     $question = $number;

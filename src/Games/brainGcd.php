@@ -8,7 +8,7 @@ function description()
         line("Find the greatest common divisor of given numbers.");
 }
 
-function generateQuestion($userName): array
+function generateQuestion(string $userName): array
 {
     $number1 = rand(1, 100);
     $number2 = rand(1, 100);

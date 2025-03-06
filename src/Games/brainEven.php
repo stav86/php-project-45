@@ -8,7 +8,7 @@ function description()
     line('Answer "yes" if the number is even, otherwise answer "no".');
 }
 
-function generateQuestion($userName): array
+function generateQuestion(string $userName): array
 {
     $number = rand(1, 100);
     $question = $number;

@@ -8,7 +8,7 @@ function description()
     line("What number is missing in the progression?");
 }
 
-function generateQuestion($userName): array
+function generateQuestion(string $userName): array
 {
     $firstNum = rand(1, 30);
     $progress = rand(2, 6);
