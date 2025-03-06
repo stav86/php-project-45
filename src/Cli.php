@@ -1,11 +1,12 @@
 <?php
 
-namespace BrainGames\Cli;
-
 use function cli\line;
 use function cli\prompt;
 
-global $name;
-line('Welcome to the Brain Games!');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
+function greeting()
+{
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    return $name;
+}

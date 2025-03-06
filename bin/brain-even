@@ -2,4 +2,12 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once (__DIR__ . '/../src/Games/brain-even.php');
+require_once __DIR__ . '/../src/Games/brainEven.php';
+
+use src\Cli\greeting;
+use src\Engine\play;
+use src\Games\brainEven\generateQuestion;
+
+$userName = greeting();
+description();
+play($userName);
