@@ -10,7 +10,7 @@ function showExercise()
     line("What number is missing in the progression?");
 }
 
-function isProgression($firstNum, $progress)
+function isProgression(int $firstNum, int $progress)
 {
     $numberCount = 10;
     $listNum = [];

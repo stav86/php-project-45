@@ -25,10 +25,8 @@ function generatedQuestionAnswer(): array
         case '-':
             $rightAnswer = $number1 - $number2;
             break;
-        case '*':
-            $rightAnswer = $number1 * $number2;
-            break;
         default:
+            $rightAnswer = $number1 * $number2;
             break;
     }
     return [$question, $rightAnswer];

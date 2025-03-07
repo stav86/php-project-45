@@ -10,7 +10,7 @@ function showExercise()
         line("Find the greatest common divisor of given numbers.");
 }
 
-function findGcd($number1, $number2)
+function findGcd(int $number1, int $number2)
 {
     while ($number2 != 0) {
         $result = $number1 % $number2;
