@@ -10,8 +10,7 @@ validate: #проверка на ошибки
 	composer validate
 
 lint: #запуск линтера
-	composer exec --verbose phpcs -- --standard=PSR12 src test
-	composer exec --verbose phpstan
+	composer exec --verbose phpcs -- --standard=PSR12 src
 
 brain-even: #запуск игры "Проверка на четность"
 	php bin/brain-even

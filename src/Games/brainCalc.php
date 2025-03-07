@@ -1,14 +1,16 @@
 <?php
 
+namespace src\Games\brainCalc;
+
 use function cli\prompt;
 use function cli\line;
 
-function description()
+function showExercise()
 {
     line("What is the result of the expression?");
 }
 
-function generateQuestion(string $userName): array
+function generatedQuestionAnswer(): array
 {
     $number1 = rand(1, 10);
     $number2 = rand(1, 10);
@@ -25,6 +27,8 @@ function generateQuestion(string $userName): array
             break;
         case '*':
             $rightAnswer = $number1 * $number2;
+            break;
+        default:
             break;
     }
     return [$question, $rightAnswer];

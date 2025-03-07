@@ -4,10 +4,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../src/Games/brainPrime.php';
 
-use src\Cli\greeting;
-use src\Engine\play;
-use src\Games\brainPrime\generateQuestion;
-
-$userName = greeting();
-description();
-play($userName);
+$userName = src\Cli\greeting();
+src\Games\brainPrime\showExercise();
+src\Engine\play('src\Games\brainPrime\generatedQuestionAnswer', $userName);

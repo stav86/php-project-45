@@ -1,33 +1,30 @@
 <?php
 
+namespace src\Engine;
+
 use function cli\prompt;
 use function cli\line;
 
-function isCorrect(string $answer, string $rightAnswer): bool
+function checkCorrect(string $answer, string $rightAnswer): bool
 {
     return $answer == $rightAnswer;
 }
 
-function play(string $userName)
+function play(callable $generatorFunction, string $userName)
 {
-    $answerCount = 0;
     $rightAnswerCount = 3;
     for ($i = 0; $i < $rightAnswerCount; $i++) {
-        list($question, $rightAnswer) = generateQuestion($userName);
+        list($question, $rightAnswer) = $generatorFunction($userName);
 
         line("Question: {$question}");
         $answer = prompt('Your answer?');
 
-        if (isCorrect($answer, $rightAnswer)) {
-            line("Correct!");
-            $answerCount++;
-        } else {
+        if (!checkCorrect($answer, $rightAnswer)) {
             line("'$answer' is wrong answer ;(. Correct answer was '$rightAnswer'.");
             line("Let's try again, $userName!");
             return;
-        }
+        }          
+        line("Correct!");
     }
-    if ($answerCount === $rightAnswerCount) {
         line("Congratulations, $userName!");
-    }
 }

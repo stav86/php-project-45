@@ -1,14 +1,16 @@
 <?php
 
+namespace src\Games\brainEven;
+
 use function cli\prompt;
 use function cli\line;
 
-function description()
+function showExercise()
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
 }
 
-function generateQuestion(string $userName): array
+function generatedQuestionAnswer(): array
 {
     $number = rand(1, 100);
     $question = $number;

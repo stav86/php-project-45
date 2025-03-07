@@ -4,10 +4,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../src/Games/brainGcd.php';
 
-use src\Cli\greeting;
-use src\Engine\play;
-use src\Games\brainGcd\generateQuestion;
-
-$userName = greeting();
-description();
-play($userName);
+$userName = src\Cli\greeting();
+src\Games\brainGcd\showExercise();
+src\Engine\play('src\Games\brainGcd\generatedQuestionAnswer', $userName);
