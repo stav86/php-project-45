@@ -33,6 +33,5 @@ function generatedQuestionAnswer(): array
     $number = rand(1, 100);
     $question = $number;
     $rightAnswer = isPrime($number) ? 'yes' : 'no';
-    
     return [$question, $rightAnswer];
 }

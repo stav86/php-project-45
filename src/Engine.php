@@ -23,7 +23,7 @@ function play(callable $generatorFunction, string $userName)
             line("'$answer' is wrong answer ;(. Correct answer was '$rightAnswer'.");
             line("Let's try again, $userName!");
             return;
-        }          
+        }
         line("Correct!");
     }
         line("Congratulations, $userName!");

@@ -25,7 +25,7 @@ function generatedQuestionAnswer(): array
 {
     $firstNum = rand(1, 30);
     $progress = rand(2, 6);
-    $randomeNum = array_rand($listNum = isProgression($firstNum, $progress), 1); 
+    $randomeNum = array_rand($listNum = isProgression($firstNum, $progress), 1);
     $rightAnswer = $listNum[$randomeNum];
     $listNum[$randomeNum] = '..';
     $question = implode(" ", $listNum);
