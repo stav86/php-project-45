@@ -8,7 +8,7 @@ use function cli\line;
 function showExercise()
 {
     return function () {
-    return  'What number is missing in the progression?';
+        return  'What number is missing in the progression?';
     };
 }
 

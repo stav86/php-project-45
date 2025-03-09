@@ -8,7 +8,7 @@ use function cli\line;
 function showExercise()
 {
     return function () {
-    return 'Answer "yes" if the number is even, otherwise answer "no".';
+        return 'Answer "yes" if the number is even, otherwise answer "no".';
     };
 }
 

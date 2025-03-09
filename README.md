@@ -12,23 +12,36 @@
 * Is it a prime number?
 
 ### System requirements
+
 To run project "Brain games", need [PHP](https://www.php.net/downloads.php) v8.3.6+
 
 ### Run games
+
 Clone the repository
-'git clone git@github.com:stav86/php-project-45.git'
+
+```git clone git@github.com:stav86/php-project-45.git```
 
 2. To run games, use the command:
+
 * Check for parity
-'make brain-even'
+
+```make brain-even```
+
 * Calculator
-'make brain-calc'
+
+```make brain-calc```
+
 * Game GCD
-'make brain-gcd'
+
+```make brain-gcd```
+
 * Arithmetic progression
-'make brain-progression'
+
+```make brain-progression```
+
 * Is it a prime number?
-'make brain-prime'
+
+```make brain-prime```
 
 ### Asciinema running games
 * **#1** - [Installing dependencies. Test of the game "Check for parity"](https://asciinema.org/a/FsdU0XCULfcxEbQYEY1hX9l65)

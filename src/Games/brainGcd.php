@@ -8,7 +8,7 @@ use function cli\line;
 function showExercise()
 {
     return function () {
-    return 'Find the greatest common divisor of given numbers.';
+        return 'Find the greatest common divisor of given numbers.';
     };
 }
 

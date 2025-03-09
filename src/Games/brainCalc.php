@@ -8,7 +8,7 @@ use function cli\line;
 function showExercise()
 {
     return function () {
-    return 'What is the result of the expression?';
+        return 'What is the result of the expression?';
     };
 }
 
