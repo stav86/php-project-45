@@ -21,7 +21,7 @@ Clone the repository
 
 ```git clone git@github.com:stav86/php-project-45.git```
 
-2. To run games, use the command:
+To run games, use the command:
 
 * Check for parity
 
