@@ -1,13 +1,15 @@
 <?php
 
-namespace src\Games\brainPrime;
+namespace BrainGames\Games\brainPrime;
 
 use function cli\prompt;
 use function cli\line;
 
 function showExercise()
 {
-    line('Answer "yes" if given number is prime. Otherwise answer "no".');
+    return function () {
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    };
 }
 
 function isPrime(int $number)
@@ -28,10 +30,12 @@ function isPrime(int $number)
     return true;
 }
 
-function generatedQuestionAnswer(): array
+function ask()
 {
-    $number = rand(1, 100);
-    $question = $number;
-    $rightAnswer = isPrime($number) ? 'yes' : 'no';
-    return [$question, $rightAnswer];
+    return function () {
+        $number = rand(1, 100);
+        $question = $number;
+        $rightAnswer = isPrime($number) ? 'yes' : 'no';
+        return [$question, $rightAnswer];
+    };
 }

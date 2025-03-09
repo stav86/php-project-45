@@ -2,6 +2,6 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once (__DIR__ . '/../src/Cli.php');
+require_once __DIR__ . '/../src/Cli.php';
 
-$userName = src\Cli\greeting();
+$userName = BrainGames\Cli\greeting();
