@@ -11,7 +11,7 @@ function checkCorrect(string $answer, string $rightAnswer): bool
 }
 
 
-function startPlay(callable $generatorFunction, $showExercise)
+function startPlay(callable $generatorFunction, string $showExercise)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
