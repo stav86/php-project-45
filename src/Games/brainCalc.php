@@ -1,15 +1,13 @@
 <?php
 
-namespace BrainGames\Games\brainCalc;
+namespace BrainGames\Games\BrainCalc;
 
 use function cli\prompt;
 use function cli\line;
 
 function showExercise()
 {
-    return function () {
         return 'What is the result of the expression?';
-    };
 }
 
 function ask()

@@ -1,15 +1,13 @@
 <?php
 
-namespace BrainGames\Games\brainGcd;
+namespace BrainGames\Games\BrainGcd;
 
 use function cli\prompt;
 use function cli\line;
 
 function showExercise()
 {
-    return function () {
         return 'Find the greatest common divisor of given numbers.';
-    };
 }
 
 function findGcd(int $number1, int $number2)

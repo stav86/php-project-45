@@ -1,18 +1,16 @@
 <?php
 
-namespace BrainGames\Games\brainProgression;
+namespace BrainGames\Games\BrainProgression;
 
 use function cli\prompt;
 use function cli\line;
 
 function showExercise()
 {
-    return function () {
         return  'What number is missing in the progression?';
-    };
 }
 
-function getListNumber(int $firstNum, int $progress)
+function getProgression(int $firstNum, int $progress)
 {
     $numberCount = 10;
     $listNum = [];
@@ -28,7 +26,7 @@ function ask()
     return function () {
         $firstNum = rand(1, 30);
         $progress = rand(2, 6);
-        $randomeNum = array_rand($listNum = getListNumber($firstNum, $progress), 1);
+        $randomeNum = array_rand($listNum = getProgression($firstNum, $progress), 1);
         $rightAnswer = $listNum[$randomeNum];
         $listNum[$randomeNum] = '..';
         $question = implode(" ", $listNum);

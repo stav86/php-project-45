@@ -2,9 +2,7 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../src/Engine.php';
-require_once __DIR__ . '/../src/Games/brainEven.php';
 
-$showExercise = BrainGames\Games\brainEven\showExercise();
-$generatorFunction = BrainGames\Games\brainEven\ask();
-BrainGames\Engine\play($generatorFunction, $showExercise);
+$showExercise = BrainGames\Games\BrainEven\showExercise();
+$generatorFunction = BrainGames\Games\BrainEven\ask();
+BrainGames\Engine\startPlay($generatorFunction, $showExercise);

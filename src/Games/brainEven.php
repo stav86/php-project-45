@@ -1,15 +1,13 @@
 <?php
 
-namespace BrainGames\Games\brainEven;
+namespace BrainGames\Games\BrainEven;
 
 use function cli\prompt;
 use function cli\line;
 
 function showExercise()
 {
-    return function () {
         return 'Answer "yes" if the number is even, otherwise answer "no".';
-    };
 }
 
 function ask()

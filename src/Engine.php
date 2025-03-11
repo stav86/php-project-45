@@ -11,12 +11,12 @@ function checkCorrect(string $answer, string $rightAnswer): bool
 }
 
 
-function play(callable $generatorFunction, callable $showExercise)
+function startPlay(callable $generatorFunction, $showExercise)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line($showExercise());
+    line($showExercise);
     $rightAnswerCount = 3;
     for ($i = 0; $i < $rightAnswerCount; $i++) {
         list($question, $rightAnswer) = $generatorFunction($name);
